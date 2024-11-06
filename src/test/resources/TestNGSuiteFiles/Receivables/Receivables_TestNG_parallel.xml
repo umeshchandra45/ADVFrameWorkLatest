@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RobinHood" parallel="tests" thread-count="3" >
+
+	<test name="ReceivablesBillingTest_Edge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			
+			<class name="tests.receivables.ReceivablesBillingTest"></class>
+		</classes>		
+	</test>
+	
+	<test name="ReceivablesBillingTest_Chrome">
+		 <parameter name="browser" value="chrome" />
+		<classes>
+			
+			<class name="tests.receivables.ReceivablesBillingTest"></class>
+		</classes>
+	</test>
+	
+	<test name="ReceivablesBillingTest_Firefox">
+		 <parameter name="browser" value="firefox" />
+		<classes>
+			
+			<class name="tests.receivables.ReceivablesBillingTest"></class>
+		</classes>
+	</test>
+	
+	
+	
+</suite>
